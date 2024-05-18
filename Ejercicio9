@@ -1,0 +1,19 @@
+Algoritmo mostrar_numero
+	Definir num Como Entero;
+	Escribir "Por favor, ingresa un numero:";
+	Leer num;
+	Si num < 0 Entonces
+		Escribir "El numero es negativo y menor que -20.";
+	Sino
+		Si num Mod 2 == 0 Entonces
+			Escribir "El numero es positivo y par.";
+		Sino
+			
+			Si num Mod 7 == 0 Entonces
+				Escribir "El numero es positivo, impar y multiplo de 7.";
+			Sino
+				Escribir "El numero es positivo e impar pero no es multiplo de 7.";
+			FinSi		
+		FinSi	
+	FinSi
+FinAlgoritmo
