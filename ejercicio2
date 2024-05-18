@@ -1,0 +1,29 @@
+Algoritmo CalcularGanancia
+    Definir precioInicial, ganancia, tamanoUva Como Real
+	Definir tipoUva Como Caracter
+	
+    Escribir "Ingrese el precio inicial por kilo de uva:"
+    Leer precioInicial
+	
+    Escribir "Ingrese el tipo de uva (A o B):"
+    Leer tipoUva
+	
+    Escribir "Ingrese el tamaño de la uva (1 o 2):"
+    Leer tamanoUva
+	
+    Si tipoUva = "A" Entonces
+        Si tamanoUva = 1 Entonces
+            ganancia = precioInicial + 20
+        Sino
+            ganancia = precioInicial + 30
+        FinSi
+    Sino
+        Si tamanoUva = 1 Entonces
+            ganancia = precioInicial - 30
+        Sino
+            ganancia = precioInicial - 50
+        FinSi
+    FinSi
+	
+    Escribir "La ganancia obtenida es: ", ganancia
+FinAlgoritmo
