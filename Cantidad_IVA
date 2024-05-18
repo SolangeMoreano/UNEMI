@@ -1,0 +1,19 @@
+Definir cantidad, costoPorUnidad, totalSinIVA, iva, totalAPagar como Real
+	
+    Escribir "Ingrese la cantidad de colas a comprar: "
+    Leer cantidad
+	
+    Si cantidad > 23 entonces
+        costoPorUnidad = 0.50
+    Sino
+        costoPorUnidad = (0.50 + 0.20) * costoPorUnidad
+    FinSi
+    totalSinIVA = cantidad * costoPorUnidad
+    iva = totalSinIVA * 0.12
+    totalAPagar = totalSinIVA + iva
+    Escribir "Cantidad comprada: ", cantidad
+    Escribir "Costo por unidad: $", costoPorUnidad
+    Escribir "Total sin IVA: $", totalSinIVA
+    Escribir "IVA: $", iva
+    Escribir "Total a pagar: $", totalAPagar
+FinAlgoritmo
