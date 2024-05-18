@@ -1,0 +1,17 @@
+Algoritmo Numero_Capicua
+	Definir numero, numeroReverso, digito, original Como Entero
+	Escribir "Ingrese un número: "
+	Leer numero
+	original = numero
+	numeroReverso = 0
+	Mientras numero > 0 Hacer
+		digito = numero % 10
+		numeroReverso = numeroReverso * 10 + digito
+		numero = trunc(numero / 10)
+	FinMientras
+	Si original = numeroReverso Entonces
+		Escribir "El número ingresado es capicúa."
+	SiNo
+		Escribir "El número ingresado no es capicúa."
+	FinSi
+FinAlgoritmo
