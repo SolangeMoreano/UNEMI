@@ -1,0 +1,12 @@
+Algoritmo Numero_Par_Menor_Diez
+	Definir num Como Entero;
+	Escribir "Por favor, ingresa un número:";
+	Leer num;
+	Si num Mod 2 = 0 Y num < 10 Entonces
+		Escribir "El número es par y menor que 10.";
+	Sino
+		Si num < 0 Y (num Mod 2 <> 0 O num Mod 5 = 0) Entonces
+			Escribir "El número es negativo e impar o es negativo y divisible por 5.";
+		FinSi
+	FinSi
+FinAlgoritmo
