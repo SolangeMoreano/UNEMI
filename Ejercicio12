@@ -1,0 +1,23 @@
+Algoritmo PrecioDeVenta
+	Definir clave, materia_prima, mano_de_obra, gastos_fabricacion, costo_produccion, precio_venta Como Real;
+	Escribir "Ingrese el costo de la materia prima:";
+	Leer materia_prima;
+	Escribir "Ingrese la clave del producto (1-6):";
+	Leer clave;
+	Segun clave Hacer
+		caso 1, 5:
+			mano_de_obra = materia_prima * 0.80;
+			gastos_fabricacion = materia_prima * 0.28;
+		caso 2, 6:
+			mano_de_obra = materia_prima * 0.85;
+			gastos_fabricacion = materia_prima * 0.30;
+		caso 3, 4:
+			mano_de_obra = materia_prima * 0.75;
+			gastos_fabricacion = materia_prima * 0.35;
+		De Otro Modo:
+			Escribir "Clave de producto inválida.";
+	Fin Segun
+	costo_produccion = materia_prima + mano_de_obra + gastos_fabricacion;
+	precio_venta = costo_produccion + (costo_produccion * 0.45);
+	Escribir "El precio de venta del producto es: ", precio_venta;
+FinAlgoritmo
