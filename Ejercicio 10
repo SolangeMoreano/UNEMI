@@ -1,0 +1,27 @@
+Algoritmo PrecioPitajaya
+	Definir tipo, tamaño Como Caracter
+	Definir precio_inicial, precio_final, descuento, iva Como Real
+	Escribir "Ingrese el tipo de pitajaya (Amarilla/Colorada):"
+	Leer tipo
+	Escribir "Ingrese el tamaño de pitajaya (1/2):"
+	Leer tamaño
+	Escribir "Ingrese el precio inicial de la pitajaya:"
+	Leer precio_inicial
+	Si tipo = "Amarilla" Entonces
+		Si tamaño = "1" Entonces
+			precio_final = precio_inicial + 10
+		Sino
+			precio_final = precio_inicial + precio_inicial*0.15 + 5
+		FinSi
+	Sino
+		Si tamaño = "1" Entonces
+			precio_final = precio_inicial - 20
+		Sino
+			precio_final = precio_inicial - precio_inicial*0.20
+		FinSi
+	FinSi
+	descuento = precio_final * 0.05
+	iva = precio_final * 0.12
+	precio_final = precio_final - descuento + iva
+	Escribir "El precio final del embarque es: ", precio_final
+FinAlgoritmo
