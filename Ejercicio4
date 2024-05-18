@@ -1,0 +1,24 @@
+Algoritmo CostoConsulta
+	Definir cita, costo, total Como Real
+	Escribir "Ingrese el n伹ero de la cita:"
+	
+	Leer cita
+	Si cita <= 3 Entonces
+		costo <- 200
+	SiNo	
+		Si cita <= 5 Entonces
+			costo <- 150
+		SiNo
+			Si cita <= 8 Entonces
+				costo <- 100
+			Sino
+				costo <- 50
+			FinSi					
+		FinSi
+	FinSi
+	
+	total <- costo * cita
+	Escribir "El costo de la cita es: $", costo
+	Escribir "El costo total del tratamiento hasta ahora es: $", total
+	
+FinAlgoritmo
