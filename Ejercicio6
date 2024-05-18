@@ -1,0 +1,26 @@
+Algoritmo LimiteCredito
+	
+	Definir tipoTarjeta, limiteActual, nuevoLimite Como Real;
+	
+	Escribir "Ingrese el tipo de tarjeta (1, 2, 3, etc.):";
+	Leer tipoTarjeta;
+	
+	Escribir "Ingrese el límite de crédito actual:";
+	Leer limiteActual;
+	
+	Segun tipoTarjeta Hacer
+		1: 
+			nuevoLimite <- limiteActual * 1.25;
+		2: 
+			nuevoLimite <- limiteActual * 1.35;
+		3: 
+			nuevoLimite <- limiteActual * 1.40;
+		De Otro Modo:
+			nuevoLimite <- limiteActual * 1.50;
+	Fin Segun
+	
+	nuevoLimite <- nuevoLimite + 20;
+	
+	Escribir "El nuevo límite de crédito es: $", nuevoLimite;
+	
+FinAlgoritmo
