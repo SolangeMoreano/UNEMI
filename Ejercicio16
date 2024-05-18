@@ -1,0 +1,12 @@
+Algoritmo SumaDivisores
+	Definir numero, divisor, suma Como Entero
+	Escribir "Ingrese un número entero: "
+	Leer numero
+	suma = 0
+	Para divisor = 1 Hasta numero Hacer
+		Si numero % divisor = 0 Entonces
+			suma = suma + divisor
+		FinSi
+	FinPara
+	Escribir "La suma de los divisores de ", numero, " es: ", suma
+FinAlgoritmo
