@@ -1,0 +1,13 @@
+Algoritmo AumentoCredito
+	Definir tipoTarjeta, aumento, nuevoLimite Como Real;
+	Escribir "Ingrese el tipo de tarjeta (1, 2, 3, etc.):";
+	Leer tipoTarjeta;
+	Segun tipoTarjeta Hacer
+		1: aumento <- 100;
+		2: aumento <- 200;
+		3: aumento <- 300;
+		De Otro Modo: aumento <- 500;
+	Fin Segun
+	nuevoLimite <- aumento + aumento * 0.10;
+	Escribir "El nuevo límite de crédito es: $", nuevoLimite;
+FinAlgoritmo
