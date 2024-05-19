@@ -1,0 +1,18 @@
+Algoritmo numero_perfecto
+	definir i, n, suma Como Entero
+	Escribir "Ingresa un numero"
+	Leer n
+	i = 2
+	suma = 0
+	Mientras i <= n Hacer
+		si n % i==0 Entonces
+			suma = suma + trunc (n/i)
+		FinSi
+		i = i + 1
+	Fin Mientras
+	si suma == n Entonces
+		Escribir "El numero es perfecto"
+	SiNo
+		Escribir "No numero no es perfecto"
+	FinSi
+FinAlgoritmo
