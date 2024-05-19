@@ -1,0 +1,12 @@
+Algoritmo cantidad_divisores
+	definir num, contador, divisor Como Entero
+	Escribir "Ingrese un numero"
+	Leer num
+	contador <- 0
+	Para divisor <- 1 Hasta num Hacer
+		Si num mod divisor = 1 Entonces
+			contador <- contador + 1
+		FinSi
+	Fin Para
+	Escribir "El numero" , num, " tiene " , contador, " divisores."
+FinAlgoritmo
