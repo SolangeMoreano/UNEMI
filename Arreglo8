@@ -1,0 +1,28 @@
+Algoritmo frases_palabras
+	Definir frase como cadena
+	definir contador_palabras, i Como Entero
+	definir es_palabra Como Logico
+	//pedir la frase al usuario
+	escribir "Introduce la frase"
+	leer frase 
+	// inicializar el contador de palabras a 0
+	contador_palabras <- 0
+	es_palabra <- Falso
+	//Recorrer cada caracter de la frase
+	Para i <- 1 Hasta longitud (frase) Hacer
+		// si el caracter actual no es un espacio
+		si subcadena(frase, i, 1) <> " " Entonces
+			//si no esta dentro de una palabra, es el comienzo de una nueva palabra
+		SiNo
+			espalabra entonces
+			contador_palabras <- contador_palabras + 1
+			espalabra <- verdadero
+		FinSi
+	SiNo
+		// si el caracter actual es un espacio, no esta dentro de una palabra
+		espalabra <- falso
+	Finsi
+FinPara
+//mostrar el resultado
+Escribir "La cantidad de palabras en la frase es:" , contador_palabras
+FinAlgoritmo
