@@ -1,0 +1,24 @@
+Algoritmo Pares_Multiplos_Tres
+    Definir numero, sumaPares, cantidadMultiplosTres Como Entero
+    // Inicializar variables
+    sumaPares <- 0
+    cantidadMultiplosTres <- 0
+    // Leer la secuencia de números
+    Repetir
+        Escribir "Ingrese un número (negativo para terminar): "
+        Leer numero
+        Si numero >= 0 Entonces
+            // Verificar si el número es par y sumar
+            Si numero % 2 = 0 Entonces
+                sumaPares <- sumaPares + numero
+            FinSi
+            // Verificar si el número es múltiplo de 3 y contar
+            Si numero % 3 = 0 Entonces
+                cantidadMultiplosTres <- cantidadMultiplosTres + 1
+            FinSi
+        FinSi
+    Hasta Que numero < 0
+    // Mostrar los resultados
+    Escribir "La suma de los números pares es: ", sumaPares
+    Escribir "La cantidad de números múltiplos de 3 es: ", cantidadMultiplosTres
+FinAlgoritmo
