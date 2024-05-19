@@ -1,0 +1,24 @@
+Algoritmo ContarYSumar
+    Definir numero, cantidadMayoresA5, sumaMultiplosDe5 Como Entero
+    // Inicializar variables
+    cantidadMayoresA5 <- 0
+    sumaMultiplosDe5 <- 0
+    // Leer la secuencia de números
+    Repetir
+        Escribir "Ingrese un número (par para terminar): "
+        Leer numero
+        Si numero % 2 <> 0 Entonces
+            // Verificar si el número es mayor a 5 y contar
+            Si numero > 5 Entonces
+                cantidadMayoresA5 <- cantidadMayoresA5 + 1
+            FinSi
+            // Verificar si el número es múltiplo de 5 y sumar
+            Si numero % 5 = 0 Entonces
+                sumaMultiplosDe5 <- sumaMultiplosDe5 + numero
+            FinSi
+        FinSi
+    Hasta Que numero % 2 = 0
+    // Mostrar los resultados
+    Escribir "La cantidad de números mayores a 5 es: ", cantidadMayoresA5
+    Escribir "La suma de los números múltiplos de 5 es: ", sumaMultiplosDe5
+FinAlgoritmo
