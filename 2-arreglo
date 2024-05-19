@@ -1,0 +1,45 @@
+Algoritmo arreglo_pares_impares
+	Definir arreglo, nuevoarreglo Como Entero
+	definir n, i sumapares, sumaimpares, contadorpares, contadorimpares Como Entero
+	Definir promediopares, promedioimpares como real 
+	Escribir "Ingrese la cantidad de elmentos del arreglo:"
+	Leer n
+	Dimension arreglo [n]
+	Dimension nuevoarreglo[2]
+	// inicializar sumas y contadores
+	sumapares <- 0
+	sumaimapres <- 0
+	contadorpares <-0
+	contadorimpares <-0
+	//Leer los elemento del arreglo
+	Para i <- 1 Hasta n Hacer
+		Escribir "Ingrese el elemento", i, ":"
+		leer arreglo [i]
+		//calcular sumas y contadores de pares e impares
+		Si arreglo [i] mod 2= 0 Entonces
+			sumapares <- sumapares + arreglo[i]
+			contadorimpares<- contadorimpares + 1
+		FinSi
+	Fin Para
+	// calcular promedios
+	si contadorpares > 0 Entonces
+		promediopares <- sumapares / contadorpares
+	SiNo 
+		promediopares <- 0
+	FinSi
+	si contador impares > 0 Entonces
+		promdeioimpares<- sumapares / contadorimpares
+	SiNo
+		promedioimpares <- 0
+	FinSi
+	// copiar promedios nuevos arreglo
+	nuevoarreglo[1] <- promedipares
+	nuevoarreglo[2] <- promedioimpares
+	//mostrar resultados
+	Escribir "Promedio de los elementos pares:", promediopares
+	Escribir "Promedio de los elementos impares:" , promedioimpares
+	escribir "Nuevo arreglo"
+	Para i <- 1 Hasta 2 Hacer
+		Escribir nuevoarreglo[i]
+	Fin Para
+FinAlgoritmo
