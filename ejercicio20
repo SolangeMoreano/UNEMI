@@ -1,0 +1,34 @@
+Algoritmo PrimosGemelo
+    // Función para determinar si un número es primo
+    Funcion Logico EsPrimo(Entero n)
+        Si n <= 1 Entonces
+            Retornar Falso
+        FinSi
+        Para i = 2 Hasta Raiz(n) Hacer
+            Si n % i = 0 Entonces
+                Retornar Falso
+            FinSi
+        FinPara
+        Retornar Verdadero
+    FinFuncion
+    // Función para determinar si dos números son primos gemelos
+    Funcion Logico SonPrimosGemelos(Entero a, Entero b)
+        Si EsPrimo(a) Y EsPrimo(b) Y Abs(a - b) = 2 Entonces
+            Retornar Verdadero
+        Sino
+            Retornar Falso
+        FinSi
+    FinFuncion
+    // Programa principal
+    Definir numero1, numero2 Como Entero
+    Escribir "Ingrese el primer número: "
+    Leer numero1
+    Escribir "Ingrese el segundo número: "
+    Leer numero2
+    Si SonPrimosGemelos(numero1, numero2) Entonces
+        Escribir numero1, " y ", numero2, " son primos gemelos."
+    Sino
+        Escribir numero1, " y ", numero2, " no son primos gemelos."
+    FinSi
+
+FinAlgoritmo
