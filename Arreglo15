@@ -1,0 +1,23 @@
+Algoritmo valores_impares
+	definir num1, num2, meno, mayo como entero
+	//leer los dos numeros
+	Escribir "Introduce el primer numer:"
+	leer num1
+	Escribir "Introduce el segundo numero:"
+	Leer num2
+	// determinar cual es el menor y cual es el mayor
+	si num1 < num2 Entonces
+		menor <- num1
+		mayor <- num2
+	SiNo
+		meno <- num2
+		may <- num1
+	FinSi
+	// Mostrar los valores impares entre los dos numeros
+	Escribir "Los valores impares entre", men, " y ", may ," son:"
+	Para i <- men Hasta may Hacer
+		si i % 2<> 0 Entonces
+			Escribir i
+		FinSi
+	Fin Para
+FinAlgoritmo
