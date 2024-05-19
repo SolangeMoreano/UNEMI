@@ -1,0 +1,15 @@
+Algoritmo algoritmo_secuencia
+	definir n, i, num Como Entero
+	Escribir "Ingrese el valor de n:"
+	Leer n
+	num <- 20
+	Para i <- 1 Hasta n Hacer
+		Escribir num
+		//alternar etre restar y sumar 5
+		Si i mod 2 = 1 Entonces
+			numero<- numero -15 
+		SiNo
+			numero <- numero +15
+		FinSi
+	Fin Para
+FinAlgoritmo
