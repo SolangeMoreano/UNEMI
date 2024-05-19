@@ -1,0 +1,15 @@
+Algoritmo NumerosMayoresA5
+    Definir numeroInicial, numeroFinal Como Entero
+    // Leer los números inicial y final
+    Escribir "Ingrese el número inicial: "
+    Leer numeroInicial
+    Escribir "Ingrese el número final: "
+    Leer numeroFinal
+    // Presentar los valores mayores a 5 entre los números
+    Escribir "Los números mayores a 5 entre ", numeroInicial, " y ", numeroFinal, " son:"
+    Para i <- numeroInicial Hasta numeroFinal Hacer
+        Si i > 5 Entonces
+            Escribir i
+        FinSi
+    FinPara
+FinAlgoritmo
