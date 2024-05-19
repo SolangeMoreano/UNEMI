@@ -1,0 +1,19 @@
+Algoritmo dos_frases_iguales
+	Definir frase1, frase2 como cadena
+	//pedir los dos frases al usuario
+	Escribir "Introduce la primer frase:"
+	leer frase1
+	Escribir "Introduce la segundo frase:"
+	leer frase2
+	// comparar las longitudes de las frases
+	si longitud(frase1) < longitud(frase2) Entonces
+		Escribir "La primera frase es mas larga:"
+	SiNo
+		FinSi
+	      si longitud(frase1) < longitud(frase2) Entonces
+		  Escribir "La segunda frase es mas larga"
+	SiNo
+		Escribir "Las dos frases tienen la misma longitud"
+	FinSi
+	
+FinAlgoritmo
