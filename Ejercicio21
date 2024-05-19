@@ -1,0 +1,26 @@
+Algoritmo primo_amigos
+	Definir a,b suma1,suma2, i, j Como Entero
+	Escribir "Ingrese 2 numeros"
+	Leer a,b
+	i = 1
+	suma1 = 0
+	Mientras i < a Hacer
+		si a % i==0 entonces
+			suma1 = suma1+i
+		FinSi
+		i = i + 1
+	Fin Mientras
+	suma2 = 0
+	j = 1
+	Mientras j<b Hacer
+		si b % j==0 Entonces
+			suma2 = suma2 + j
+		FinSi
+		j = j + 1
+	Fin Mientras
+		si suma1 ==b y suma2== a Entonces
+			Escribir "Los numeros son amigos"
+		SiNo
+			Escribir "Los numeros no son amigos"
+		FinSi
+FinAlgoritmo
